@@ -28,6 +28,10 @@ Route::get('/q=simplon', function (){
   return view('simplon');
 });
 
+Route::get('/contact', function(){
+  return view('contact');
+});
+
 
 
 /*

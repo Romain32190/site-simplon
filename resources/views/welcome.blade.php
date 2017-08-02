@@ -34,7 +34,7 @@
                     <a href="/q=simplon">Simplon</a>
                     <a href="https://laracasts.com">Promotion</a>
                     <a href="https://laravel-news.com">Blog</a>
-                    <a href="https://forge.laravel.com">Contact</a>
+                    <a href="/contact">Contact</a>
                     <a href="https://github.com/laravel/laravel">Liens</a>
                 </div>
             </div>
