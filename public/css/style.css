@@ -5,8 +5,13 @@ html, body {
     font-weight: 100;
     height: 100vh;
     margin: 0;
-    background-image:url('http://medias.cdtl32.com/CDT32_0006168.jpg')
-    opacity:0,70;
+
+}
+
+.image{
+  background-image:url('http://medias.cdtl32.com/CDT32_0006168.jpg');
+  opacity: 0.80;
+
 }
 
 .full-height {
