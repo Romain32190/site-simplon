@@ -58,8 +58,8 @@ html, body {
 }
 
 .ui.card {
-  display: block;
-  margin-left: 35em;
+  display: inline-flex;
+  margin-left: 6.2em;
 }
 
 .contact{
