@@ -23,6 +23,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/liens', function () {
+    return view('liens');
+});
 
 Route::get('/q=simplon', function (){
   return view('simplon');
