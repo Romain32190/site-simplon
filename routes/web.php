@@ -23,10 +23,18 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/liens', function () {
+    return view('liens');
+});
 
 Route::get('/q=simplon', function (){
   return view('simplon');
 });
+
+Route::get('/contact', function(){
+  return view('contact');
+});
+Route::post('/contact', 'ContactController@postContact');
 
 
 

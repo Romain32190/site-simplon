@@ -6,12 +6,11 @@ html, body {
     height: 100vh;
     margin: 0;
 }
-
 .image{
   background-image:url('http://medias.cdtl32.com/CDT32_0006168.jpg');
-  opacity:0.80;
-}
+  opacity: 0.80;
 
+}
 .full-height {
     height: 100vh;
 }
@@ -38,13 +37,10 @@ html, body {
 
 .title {
     font-size: 84px;
-    background-color:#111;
-    color:#FFF;
 }
 
 .links > a {
-    background-color:#111;
-    color: #FFF;
+    color: #636b6f;
     padding: 0 25px;
     font-size: 12px;
     font-weight: 600;
@@ -56,16 +52,23 @@ html, body {
 .m-b-md {
     margin-bottom: 30px;
 }
-
-.ui.card {
-  display: block;
-  margin-left: 35em;
+.logo{
+  background: silver;
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+  height:200px;
+  width:100%;
 }
-
-.contact{
-  text-align: center;
+.fond{
+  background: silver;
 }
-
-#contact-button{
-  margin-bottom: 2em;
+.img{
+ height: 100px;
+ width: auto;
+ margin: 10px;
+}
+.logo img:hover{
+  margin: -5px;
+  border: solid 5px #FF7800;
 }
