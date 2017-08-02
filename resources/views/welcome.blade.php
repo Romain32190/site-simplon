@@ -12,31 +12,34 @@
         <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
+      <div class="image">
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
-                </div>
-            @endif
+          @if (Route::has('login'))
+          <div class="top-right links">
+            @auth
+            <a href="{{ url('/home') }}">Home</a>
+            @else
+            <a href="{{ route('login') }}">Login</a>
+            <a href="{{ route('register') }}">Register</a>
+            @endauth
+          </div>
+          @endif
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Site Simplon
-                </div>
-
-                <div class="links">
-                    <a href="/q=simplon">Simplon</a>
-                    <a href="https://laracasts.com">Promotion</a>
-                    <a href="https://laravel-news.com">Blog</a>
-                    <a href="https://forge.laravel.com">Contact</a>
-                    <a href="https://github.com/laravel/laravel">Liens</a>
-                </div>
+          <div class="content">
+            <div class="title m-b-md">
+              Site Simplon
             </div>
+
+            <div class="links">
+              <a href="/q=simplon">Simplon</a>
+              <a href="https://laracasts.com">Promotion</a>
+              <a href="https://laravel-news.com">Blog</a>
+              <a href="https://forge.laravel.com">Contact</a>
+              <a href="https://github.com/laravel/laravel">Liens</a>
+            </div>
+          </div>
         </div>
+
+      </div>
     </body>
 </html>
