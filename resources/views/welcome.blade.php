@@ -34,13 +34,9 @@
                     <a href="/q=simplon">Simplon</a>
                     <a href="https://laracasts.com">Promotion</a>
                     <a href="https://laravel-news.com">Blog</a>
-<<<<<<< HEAD
                     <a href="/contact">Contact</a>
-                    <a href="https://github.com/laravel/laravel">Liens</a>
-=======
-                    <a href="https://forge.laravel.com">Contact</a>
                     <a href="/liens">Liens</a>
->>>>>>> 9e9ff9b7d9062a1cf1cd577e8c924404f7c7772b
+
                 </div>
             </div>
         </div>
