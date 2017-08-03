@@ -1,4 +1,4 @@
-<h3>{{ $name }} vous a envoyé un magnifique cookie imaginaire!</h3>
+<h3>{{ $name }}</h3>
 
 <div>
   {{ $bodyMessage }}

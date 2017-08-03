@@ -30,8 +30,6 @@ class ContactController extends Controller
         $message->subject($data['subject']);
       });
 
-    //  Session::flash('success', 'Message envoyé!');
-
       return redirect('/contact')->with('status', 'Message bien envoyé!');
     }
 }
