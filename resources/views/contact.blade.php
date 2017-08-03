@@ -54,7 +54,7 @@
           </div>
         </div>
       </div>
-    </div>
+
 
     <div class="ui container">
       <form action="/contact" method="post" class="ui form">
