@@ -10,6 +10,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
     </head>
     <body>
       <div class="image">
@@ -27,7 +28,8 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Site Simplon
+                    <div class="animated bounceInDown">
+                    Simplon Auch
                 </div>
                 <div class="links">
                     <a href="/q=simplon">Simplon</a>
@@ -35,6 +37,7 @@
                     <a href="https://laravel-news.com">Blog</a>
                     <a href="/contact">Contact</a>
                     <a href="/liens">Liens</a>
+                </div>
                 </div>
             </div>
           </div>
