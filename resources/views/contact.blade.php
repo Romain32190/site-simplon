@@ -9,6 +9,7 @@
 </head>
 
 <body>
+
   @if (session('status'))
   <div class="ui success message">
     {{ session('status') }}
