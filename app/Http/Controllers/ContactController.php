@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests;
+use App\Contact;
 use Mail;
-use Session;
 
 class ContactController extends Controller
 {
@@ -15,7 +15,9 @@ class ContactController extends Controller
         'name' => 'min:3',
         'subject' => 'min:3',
         'message' => 'min:10',
+        'g-recaptcha-response' => 'required|recaptcha',
       ]);
+
 
       $data = array(
         'email' => $request->email,
@@ -29,6 +31,16 @@ class ContactController extends Controller
         $message->to('roma.maxime1994@gmail.com');
         $message->subject($data['subject']);
       });
+
+      $contact = new Contact;
+      $contact->name = $request->name;
+      $contact->email = $request->email;
+      $contact->subject = $request->subject;
+      $contact->message = $request->message;
+      $contact->save();
+
+
+
 
       return redirect('/contact')->with('status', 'Message bien envoyé!');
     }

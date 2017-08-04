@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css">
   <link rel="stylesheet" href="/css/style.css">
   <title>Page contact</title>
+</head>
 
   <body>
     @if (session('status'))
@@ -75,9 +76,13 @@
           <label>Votre message:</label>
           <textarea name="message" id="message"></textarea>
         </div>
+        <div class="field">
+          {!! Recaptcha::render() !!}
+        </div>
         <button id="contact-button" class="ui button green" type="submit">Submit</button>
       </form>
     </div>
+
 
 
 
