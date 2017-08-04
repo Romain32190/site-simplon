@@ -35,8 +35,6 @@
             <a href="https://stgaudens.simplon.co/" target="_blank">Saint-Gaudens</a>
             <a href="https://simplon.co/" target="_blank">Montreuil</a>
         </div>
-
     </div>
-</div>
 </body>
 </html>

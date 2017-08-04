@@ -25,7 +25,7 @@
             @endif
 
             <div class="content">
-            
+                
                 <span class="simplon_auch"> SIMPLON AUCH </span> 
 
                 <div class="links">
