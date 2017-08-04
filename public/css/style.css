@@ -1,15 +1,14 @@
-html, body {
-    background-color: #fff;
-    color: #636b6f;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 100;
-    height: 100vh;
-    margin: 0;
+body {
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  height: 100vh;
 }
 
-.image{
-  background-image:url('http://medias.cdtl32.com/CDT32_0006168.jpg');
-  opacity:0.80;
+.image, html {
+    background-image: url("../images/bi.png");
+    width: 100%;
+    height: 100%;
 }
 
 .full-height {
@@ -38,12 +37,10 @@ html, body {
 
 .title {
     font-size: 84px;
-    /*background-color:#111;*/
     color:#FFF;
 }
 
 .links > a {
-    /*background-color:#111;*/
     color: #FFF;
     padding: 0 25px;
     font-size: 12px;
@@ -53,7 +50,14 @@ html, body {
     text-transform: uppercase;
 }
 
+a:hover {
+  color:red;
+  text-decoration:none;
+}
+
 .m-b-md {
+    width: 100%;
+    height: auto;
     margin-bottom: 30px;
 }
 
@@ -68,4 +72,9 @@ html, body {
 
 #contact-button{
   margin-bottom: 2em;
+}
+
+.simplon_auch {
+    color: black;
+    font-size: 800%;
 }
