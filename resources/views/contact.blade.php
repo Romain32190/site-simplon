@@ -10,11 +10,7 @@
 </head>
 
   <body>
-    @if (session('status'))
-      <div class="ui success message">
-          {{ session('status') }}
-      </div>
-    @endif
+
 
     <h1 class="contact">Contact</h1>
 
@@ -56,6 +52,11 @@
         </div>
       </div>
 
+    @if (session('status'))
+      <div class="ui success message">
+          {{ session('status') }}
+      </div>
+    @endif
 
     <div class="ui container">
       <form action="/contact" method="post" class="ui form">
