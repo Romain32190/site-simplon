@@ -7,41 +7,20 @@
   <link rel="stylesheet" href="/css/style.css">
   <title>Page contact</title>
 </head>
+{{-- <body> --}}
 
-<body>
+<h1 class="contact">Contact</h1>
 
-  @if (session('status'))
-  <div class="ui success message">
-    {{ session('status') }}
-  </div>
-  @endif
-
-  <h1 class="contact">Contact</h1>
-
-  <div class="ui blue card">
-    <div class="content">
-      <div class="header">Aurelien chirot</div>
-      <div class="meta">
-        <span class="category">Formateur</span>
-      </div>
-      <div class="description">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="ui red card">
+<div class="ui blue card">
   <div class="content">
-    <div class="header">Victor Godinho</div>
+    <div class="header">Aurelien chirot</div>
     <div class="meta">
-      <span class="category">Administration</span>
+      <span class="category">Formateur</span>
     </div>
     <div class="description">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     </div>
   </div>
-</div>
 </div>
 
 <div class="ui yellow card">
@@ -57,7 +36,27 @@
 </div>
 
 
+<div class="ui red card">
+  <div class="content">
+    <div class="header">Victor Godinho</div>
+    <div class="meta">
+      <span class="category">Administration</span>
+    </div>
+    <div class="description">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+  </div>
+</div>
+
+
 <div class="ui container">
+
+  @if (session('status'))
+  <div class="ui success message">
+    {{ session('status') }}
+  </div>
+  @endif
+  
   <form action="/contact" method="post" class="ui form">
     {{ csrf_field() }}
     <div class="field">
@@ -82,5 +81,6 @@
     <button id="contact-button" class="ui button green" type="submit">Submit</button>
   </form>
 </div>
+
 
 </body>

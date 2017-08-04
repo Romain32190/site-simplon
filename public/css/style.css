@@ -7,49 +7,49 @@ body {
 }
 
 .image, .html {
-    background-image: url("../images/bi.png");
-    width: 100%;
-    height: 100%;
+  background-image: url("../images/bi.png");
+  width: 100%;
+  height: 100%;
 }
 
 .full-height {
-    height: 100vh;
+  height: 100vh;
 }
 
 .flex-center {
-    align-items: center;
-    display: flex;
-    justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .position-ref {
-    position: relative;
+  position: relative;
 }
 
 .top-right {
-    position: absolute;
-    right: 10px;
-    top: 18px;
+  position: absolute;
+  right: 10px;
+  top: 18px;
 }
 
 .content {
-    text-align: center;
+  text-align: center;
 }
 
 .title {
-    font-size: 80px;
-    color:black;
-    margin: 3%;
+  font-size: 80px;
+  color:black;
+  margin: 3%;
 }
 
 .links > a {
-    color: #FFF;
-    padding: 0 25px;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: .1rem;
-    text-decoration: none;
-    text-transform: uppercase;
+  color: #FFF;
+  padding: 0 25px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 a:hover {
@@ -58,9 +58,9 @@ a:hover {
 }
 
 .m-b-md {
-    width: 100%;
-    height: auto;
-    margin-bottom: 30px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
 }
 
 .ui.card {
@@ -77,6 +77,12 @@ a:hover {
 }
 
 .simplon_auch {
-    color: black;
-    font-size: 800%;
+  color: black;
+  font-size: 800%;
+}
+
+.success {
+
+  text-align: center;
+
 }

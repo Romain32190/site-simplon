@@ -36,6 +36,14 @@ Route::get('/contact', function(){
 });
 Route::post('/contact', 'ContactController@postContact');
 
+Route::get('/promo', function(){
+  return view('promotion');
+});
+
+Route::get('/blog', function(){
+  return view('blog');
+});
+
 
 
 /*
@@ -51,3 +59,7 @@ Route::post('/contact', 'ContactController@postContact');
 
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('profile', 'UserController@profile');
+
+Route::post('profile', 'UserController@update_avatar');
