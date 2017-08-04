@@ -178,6 +178,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        //image intervention
+        Intervention\Image\ImageServiceProvider::class,
+
     ],
 
     /*
@@ -227,6 +230,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Recaptcha' => Greggilbert\Recaptcha\Facades\Recaptcha::class,
+        'Image' => Intervention\Image\Facades\Image::class,
 
     ],
 
