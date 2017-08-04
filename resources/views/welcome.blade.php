@@ -24,10 +24,9 @@
             @endauth
         </div>
         @endif
-
         <div class="content">
             <div class="title m-b-md">
-                <strong> SIMPLON AUCH </strong> 
+                SIMPLON AUCH 
             </div>
 
             <div class="links">

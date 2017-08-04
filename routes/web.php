@@ -34,6 +34,7 @@ Route::get('/q=simplon', function (){
 Route::get('/contact', function(){
   return view('contact');
 });
+Route::post('/contact', 'ContactController@postContact');
 
 
 
