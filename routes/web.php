@@ -36,6 +36,14 @@ Route::get('/contact', function(){
 });
 Route::post('/contact', 'ContactController@postContact');
 
+Route::get('/promo', function(){
+  return view('promotion');
+});
+
+Route::get('/blog', function(){
+  return view('blog');
+});
+
 
 
 /*
