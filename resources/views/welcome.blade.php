@@ -4,40 +4,39 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Laravel</title>
-
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <div class="image">
-    <div class="flex-center position-ref full-height">
-        @if (Route::has('login'))
-        <div class="top-right links">
-            @auth
-            <a href="{{ url('/home') }}">Accueil</a>
-            @else
-            <a href="{{ route('login') }}">Connexion</a>
-            <a href="{{ route('register') }}">Inscription</a>
-            @endauth
-        </div>
-        @endif
-        <div class="content">
-            <div class="title m-b-md">
-                SIMPLON AUCH 
+    <div class="image">
+        <div class="flex-center position-ref full-height">
+            @if (Route::has('login'))
+            <div class="top-right links">
+                @auth
+                <a href="{{ url('/home') }}">Accueil</a>
+                @else
+                <a href="{{ route('login') }}">Connexion</a>
+                <a href="{{ route('register') }}">Inscription</a>
+                @endauth
             </div>
+            @endif
 
-            <div class="links">
-                <a href="/q=simplon">Simplon</a>
-                <a href="https://laracasts.com">Promotion</a>
-                <a href="https://laravel-news.com">Blog</a>
-                <a href="/contact">Contact</a>
-                <a href="/liens">Liens</a>
+            <div class="content">
+            
+                <span class="simplon_auch"> SIMPLON AUCH </span> 
+
+                <div class="links">
+                    <a href="/q=simplon">Simplon</a>
+                    <a href="https://laracasts.com">Promotion</a>
+                    <a href="https://laravel-news.com">Blog</a>
+                    <a href="/contact">Contact</a>
+                    <a href="/liens">Liens</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 </body>
 </html>
