@@ -25,13 +25,15 @@
             @endif
 
             <div class="content">
-                
-                <span class="simplon_auch"> SIMPLON AUCH </span> 
+
+                <div class="animated bounceInDown">
+                    <span class="simplon_auch"> SIMPLON AUCH </span>
+                </div>
 
                 <div class="links">
                     <a href="/q=simplon">Simplon</a>
-                    <a href="https://laracasts.com">Promotion</a>
-                    <a href="https://laravel-news.com">Blog</a>
+                    <a href="/promo">Promotion</a>
+                    <a href="/blog">Blog</a>
                     <a href="/contact">Contact</a>
                     <a href="/liens">Liens</a>
                 </div>
