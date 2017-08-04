@@ -25,8 +25,10 @@
             @endif
 
             <div class="content">
-                
-                <span class="simplon_auch"> SIMPLON AUCH </span> 
+
+                <div class="animated bounceInDown">
+                    <span class="simplon_auch"> SIMPLON AUCH </span> 
+                </div>
 
                 <div class="links">
                     <a href="/q=simplon">Simplon</a>
