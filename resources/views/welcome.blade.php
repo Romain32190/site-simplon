@@ -30,16 +30,14 @@
 
             <div class="content">
 
-
                 <span class="simplon_auch"> SIMPLON AUCH </span>
 
-
                 <nav class="cl-effect-1">
-                    <a href="/q=simplon" data-hover="Narbonne" target="_blank">Simplon</a>
-                    <a href="/promo" data-hover="Saint-Gaudens" target="_blank">Promotion</a>
-                    <a href="/blog" data-hover="Montreuil" target="_blank">Blog</a>
-                    <a href="/contact" data-hover="Montreuil" target="_blank">Contact</a>
-                    <a href="/liens" data-hover="Montreuil" target="_blank">Liens</a>                                       
+                    <a href="/q=simplon" data-hover="Narbonne" target="_blank"><span>Simplon</span></a>
+                    <a href="/promo" data-hover="Saint-Gaudens" target="_blank"><span>Promotion</span></a>
+                    <a href="/blog" data-hover="Montreuil" target="_blank"><span>Blog</span></a>
+                    <a href="/contact" data-hover="Montreuil" target="_blank"><span>Contact</span></a>
+                    <a href="/liens" data-hover="Montreuil" target="_blank"><span>Liens</span></a>                                       
                 </nav>
             </div>
         </div>

@@ -13,11 +13,21 @@ $user= DB::select('SELECT * FROM users');
 
     <title>Promotion AUCH</title>
 
+    <link rel="stylesheet" type="text/css" href="/CreativeLinkEffects/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/CreativeLinkEffects/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="/CreativeLinkEffects/css/component.css" />
+    <script src="/CreativeLinkEffects/js/modernizr.custom.js"></script>
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/css/liens.css">
 </head>
 <body class="container image">
+
+    <nav class="cl-effect-1">    
+        <a href="/"><span>Accueil</span></a>
+    </nav>
+
     <div class="places is-medium is-grey">
         <div>
             <div>    
