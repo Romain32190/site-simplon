@@ -6,8 +6,8 @@ html, body {
     height: 100vh;
     margin: 0;
 }
-.image{
-  background-image:url('http://medias.cdtl32.com/CDT32_0006168.jpg');
+.image, .html{
+  background-image:url('../images/bi.png');
   opacity: 0.80;
 
 }
@@ -39,45 +39,47 @@ html, body {
     font-size: 84px;
 }
 
-.links > a {
-    color: #636b6f;
-    padding: 0 25px;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: .1rem;
-    text-decoration: none;
-    text-transform: uppercase;
+span {
+    font-size: 65%;
+}
+
+img:hover{
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  border-radius: 10pt;
 }
 
 .m-b-md {
     margin-bottom: 30px;
 }
+
 .logo{
-  background: silver;
   display: flex;
   justify-content: space-around;
-  align-items:center;
-  height:200px;
-  width:100%;
+  margin: auto;
 }
-.fond{
-  background: silver;
-}
-.img{
- height: 100px;
- width: auto;
- margin: 10px;
-}
+
 .logo img:hover{
-  margin: -5px;
-  border: solid 5px #FF7800;
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  border-radius: 15pt;
+  transition: 0.3s;
 }
+
+.img {
+   height: 100px;
+   width: auto;
+   margin: 20pt;
+}
+
 .places {
     background: #fbfbfb
 }
 
 .places>.container {
-    height: 100%
+    height: 100%;
 }
 
 .places .avatars {
@@ -88,25 +90,25 @@ html, body {
     left: 0;
     top: 0;
     position: absolute;
-    width: 641px;
-    height: 607px
+    width: 590px;
+    height: 607px;
 }
 
 .places .avatars:hover,
 .places .avatars:hover .place-avatar {
     -webkit-animation-play-state: paused;
-    animation-play-state: paused
+    animation-play-state: paused;
 }
 
 @media screen and (min-width:769px) {
     .places .avatars {
-        display: none
+        display: none;
     }
 }
 
 @media screen and (min-width:1180px) {
     .places .avatars {
-        display: block
+        display: block;
     }
 }
 
@@ -136,18 +138,18 @@ html, body {
     width: 70px;
     height: 70px;
     -webkit-animation: reverseRotateSingleAvatar 150s linear infinite;
-    animation: reverseRotateSingleAvatar 150s linear infinite
+    animation: reverseRotateSingleAvatar 150s linear infinite;
 }
 
 .place-avatar:hover {
     -webkit-animation-play-state: pause;
     animation-play-state: pause;
-    z-index: 100
+    z-index: 100;
 }
 
 .place-avatar:hover img {
     -webkit-box-shadow: 0 0 0 4px #fbfbfb, 0 0 0 6px rgba(0, 0, 0, .1), 0 0 0 10px #fbfbfb, 0 0 0 12px rgba(0, 0, 0, .1);
-    box-shadow: 0 0 0 4px #fbfbfb, 0 0 0 6px rgba(0, 0, 0, .1), 0 0 0 10px #fbfbfb, 0 0 0 12px rgba(0, 0, 0, .1)
+    box-shadow: 0 0 0 4px #fbfbfb, 0 0 0 6px rgba(0, 0, 0, .1), 0 0 0 10px #fbfbfb, 0 0 0 12px rgba(0, 0, 0, .1);
 }
 
 .place-avatar:hover .description {
@@ -157,13 +159,13 @@ html, body {
 @-webkit-keyframes reverseRotateSingleAvatar {
     to {
         -webkit-transform: rotate(-1turn);
-        transform: rotate(-1turn)
+        transform: rotate(-1turn);
     }
 }
 
 @keyframes reverseRotateSingleAvatar {
     to {
-        -webkit-transform: rotate(-1turn);
+        -webkit-transform: rotate(10turn);
         transform: rotate(-1turn)
     }
 }
@@ -249,11 +251,12 @@ html, body {
     top: 445px;
     left: 247px
 }
+
 .place-avatar .description {
     background: #fff;
-    width: 320px;
+    width: 300px;
     top: 0;
-    left: 100%;
+    left: 140%;
     position: absolute;
     color: #4d545d;
     border: none;
@@ -275,10 +278,11 @@ html, body {
 }
 
 .place-avatar .description .nom {
-    color: #111;
     font-weight: 700;
     display: block;
     text-transform: uppercase
 }
 
-
+.autres_promotions {
+    margin-top: 20pt;
+}
