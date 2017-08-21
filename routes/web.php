@@ -43,6 +43,9 @@ Route::get('/promo', function(){
 Route::get('/blog', function(){
   return view('blog');
 });
+Route::get('/flux', function(){
+  return view('flux');
+});
 
 
 
