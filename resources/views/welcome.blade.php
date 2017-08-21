@@ -12,7 +12,6 @@
     <link rel="stylesheet" type="text/css" href="/css/csshake.min.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -31,9 +30,9 @@
 
             <div class="content">
 
-                <div class="animated bounceInDown shake-opacity">
-                    <span class="simplon_auch"> SIMPLON AUCH </span>
-                </div>
+
+                <span class="simplon_auch"> SIMPLON AUCH </span>
+
 
                 <nav class="cl-effect-1">
                     <a href="/q=simplon" data-hover="Narbonne" target="_blank">Simplon</a>
