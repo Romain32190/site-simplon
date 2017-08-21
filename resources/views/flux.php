@@ -8,7 +8,7 @@ $bdd= new PDO('mysql:host=localhost;dbname=simplonSite;charset=utf8', 'root', 'a
 		die('Erreur : ' .$e->getMessage());
 	}
 // Récupère les 10 derniers articles écrits
-$flux= $bdd->query('SELECT * FROM blog ORDER BY created_at DESC ');
+$flux= $bdd->query('SELECT titre, article, blog.created_at, userName FROM blog JOIN users ON blog.auteur=users.id ORDER BY created_at DESC ');
 // $flux= DB::select('SELECT * FROM blog ORDER BY created_at DESC LIMIT 0,25');
 //dd($flux);
 $last= $bdd->query('SELECT created_at FROM blog ORDER BY created_at DESC LIMIT 0,1');
@@ -29,7 +29,7 @@ $date= $last->fetch()['created_at'];
         <item>   	
             <title><?= $info['titre'] ?></title>
             <description><?=$info['article']?></description>
-            <description><?= $info['auteur']?></description>
+            <description><?= $info['userName']?></description>
             <pubDate><?= date(DATE_RSS, strtotime($info['created_at'])) ?></pubDate>
             <link>http://127.0.0.1:8000/blog</link>
         </item>

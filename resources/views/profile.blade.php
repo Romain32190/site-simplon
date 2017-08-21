@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
             <img src="/storage/avatars/{{ $user->avatar }}" style="width:150px; height:150px; float:left; border-radius:50%; margin-right:25px;">
-            <h2>{{ $user->name }} Profil</h2>
+            <h2>Profil de {{ $user->userName }} </h2>
             <form enctype="multipart/form-data" action="/profile" method="POST">
                 <label>Mettre à jour votre profil</label>
                 <input type="file" name="avatar">
