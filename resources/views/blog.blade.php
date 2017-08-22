@@ -11,6 +11,8 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="/css/tether.min.css">
     <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="alternate" type="application/rss+xml"
+   href="http://127.0.0.1:8000/flux" title="Blog"/>
 
     <!-- Custom styles for this template -->
     <link href="css/blog.css" rel="stylesheet">
@@ -67,16 +69,15 @@
 
         <div class="col-sm-3 offset-sm-1 blog-sidebar">
           <div class="sidebar-module sidebar-module-inset">
-            <h4>About</h4>
+            <h4>A propos</h4>
             <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
           </div>
 
           <div class="sidebar-module">
-            <h4>Elsewhere</h4>
+            <h4>Ailleur</h4>
             <ol class="list-unstyled">
-              <li><a href="#">GitHub</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Facebook</a></li>
+              <li><a href="https://git">GitHub</a></li>
+
             </ol>
           </div>
         </div><!-- /.blog-sidebar -->

@@ -28,6 +28,7 @@
                         <ul class="dropdown-menu">
                           <h6 class="dropdown-header">Administration</h6>
                           <li><a href="/profile">Profil</a></li>
+                          <li><a href="/gestion"></a>gestion</li>
                           <li><a class="" href="/article">Ajouter un article</a></li>
                           <li><a href="{{ route('logout') }}"
                             onclick="event.preventDefault();
