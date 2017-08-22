@@ -38,7 +38,6 @@
       <div class="title">
         PRESENTATION SIMPLON
       </div>
-
       <div class="ui aligned grid">
         <div class="center aligned two column row">
           <div class="column">
