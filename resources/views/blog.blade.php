@@ -1,6 +1,6 @@
 <?php 
 try {
-$bdd= new PDO('mysql:host=localhost;dbname=simplonSite;charset=utf8', 'root', 'azerty');
+$bdd= new PDO('mysql:host=localhost;dbname='.env('DB_DATABASE').';charset=utf8', env('DB_USERNAME'), env('DB_PASSWORD'));
 
   }
   catch (Exception $e) {
