@@ -48,7 +48,8 @@
           @foreach ($articles as $article)
           <div class="blog-post">
             <h2 class="blog-post-title">{{$article->titre}}</h2>
-            <p class="blog-post-meta">{{$article->created_at}}<a href="#">{{$article->userName}}</a></p>
+            <p class="blog-post-meta">le {{$article->created_at}} de <a href="#">{{$article->userName}}</a></p>
+            <p class="blog-post-meta"><i class="icon-star"> {{$article->note}}</i></p>
             {{$article->article}}
 
           </div>
