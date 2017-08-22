@@ -16,7 +16,7 @@
             <br>
              <form class="form-group" action="/profile/desc" method="POST">
                 <label>Mettre à jour votre description : </label>
-                <input class="form-control" type="text" name="desc" size="20"  style="display:inline-block;height:40px;width:62em;">
+                <input class="form-control" type="text" name="desc" size="20"  placeholder="Description" style="display:inline-block;height:40px;width:62em;">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 <input type="submit" class="pull-right btn btn-sm btn-primary" style="margin-top:0.5em;" />
             </form>
