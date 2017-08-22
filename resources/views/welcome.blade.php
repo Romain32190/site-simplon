@@ -41,7 +41,6 @@
                       </ul>
                   </div>                @else
                   <a href="{{ route('login') }}" data-hover="Narbonne">Connexion</a>
-                  <a href="{{ route('register') }}" data-hover="Saint-Gaudens">Inscription</a>
                   @endauth
               </div>
               @endif
