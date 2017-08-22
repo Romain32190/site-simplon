@@ -82,7 +82,7 @@
           <div class="sidebar-module">
             <h4>Ailleur</h4>
             <ol class="list-unstyled">
-              <li><a href="https://git">GitHub</a></li>
+              <li><a href="https://github.com/SimplonAuch">GitHub</a></li>
 
             </ol>
           </div>
