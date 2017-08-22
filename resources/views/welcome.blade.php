@@ -9,7 +9,6 @@
     <link rel="stylesheet" type="text/css" href="/CreativeLinkEffects/css/demo.css" />
     <link rel="stylesheet" type="text/css" href="/CreativeLinkEffects/css/component.css" />
     <script src="/CreativeLinkEffects/js/modernizr.custom.js"></script>
-    <link rel="stylesheet" type="text/css" href="/css/csshake.min.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/css/style.css">
@@ -48,6 +47,7 @@
 
             <div class="content">
 
+
                 <span class="simplon_auch"> SIMPLON AUCH </span>
 
                 <nav class="cl-effect-1">
@@ -55,10 +55,9 @@
                     <a href="/promo" data-hover="Saint-Gaudens"><span>Promotion</span></a>
                     <a href="/blog" data-hover="Montreuil"><span>Blog</span></a>
                     <a href="/contact" data-hover="Montreuil"><span>Contact</span></a>
-                    <a href="/liens" data-hover="Montreuil"><span>Liens</span></a>
+                    <a href="/liens" data-hover="Montreuil"><span>Liens</span></a>                                       
                 </nav>
             </div>
         </div>
-    </div>
-</body>
-</html>
+    </body>
+    </html>
