@@ -47,7 +47,11 @@ Route::get('/flux', function(){
   return view('flux');
 });
 
+Route::get('/article', function(){
+  return view('newarticle');
+});
 
+Route::post('/newarticle', 'BlogController@nvArtile');
 
 /*
 /
