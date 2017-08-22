@@ -10,8 +10,8 @@
   <body class="image">
 
     <h1>Blog Simplon Auch</h1>
-<a type="application/rss+xml"
-   href="http://127.0.0.1:8000/flux">Flux RSS de cette page
-</a>
+    <a type="application/rss+xml"
+       href="http://127.0.0.1:8000/flux">Flux RSS de cette page
+    </a>
   </body>
 </html>
