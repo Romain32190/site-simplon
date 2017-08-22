@@ -9,21 +9,19 @@
     <link rel="stylesheet" type="text/css" href="/CreativeLinkEffects/css/demo.css" />
     <link rel="stylesheet" type="text/css" href="/CreativeLinkEffects/css/component.css" />
     <script src="/CreativeLinkEffects/js/modernizr.custom.js"></script>
-    <link rel="stylesheet" type="text/css" href="/css/csshake.min.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
-    <div class="image">
+<body class="image">
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
             <div class="top-right links">
                 @auth
                 <a href="{{ url('/home') }}">Accueil</a>
                 @else
-                <a href="{{ route('login') }}" data-hover="Narbonne">Connexion</a>
-                <a href="{{ route('register') }}" data-hover="Saint-Gaudens">Inscription</a>
+                <a href="{{ route('login') }}">Connexion</a>
+                <a href="{{ route('register') }}">Inscription</a>
                 @endauth
             </div>
             @endif
@@ -41,6 +39,5 @@
                 </nav>
             </div>
         </div>
-    </div>
 </body>
 </html>
