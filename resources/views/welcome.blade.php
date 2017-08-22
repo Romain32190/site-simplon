@@ -20,12 +20,12 @@
     <div class="image">
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
-            <div class="top-right links" style="margin-right: 5.5em;">
+            <div class="top-right links">
                 @auth
                 <div class="dropdown">
-                    <button class="btn btn dropdown-toggle btn-lg" type="button" data-toggle="dropdown">Menu
+                    <button class="btn btn dropdown-toggle btn-lg" type="button" data-toggle="dropdown">Administration du site
                         <span class="caret"></span></button>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu" style="width: 15.8em;">
                           <h6 class="dropdown-header">Administration</h6>
                           <li><a href="/profile">Profil</a></li>
                           <li><a href="/gestion">Gestion</a></li>
@@ -56,7 +56,7 @@
                     <a href="/promo" data-hover="Saint-Gaudens"><span>Promotion</span></a>
                     <a href="/blog" data-hover="Montreuil"><span>Blog</span></a>
                     <a href="/contact" data-hover="Montreuil"><span>Contact</span></a>
-                    <a href="/liens" data-hover="Montreuil"><span>Liens</span></a>                                       
+                    <a href="/liens" data-hover="Montreuil"><span>Liens</span></a>
                 </nav>
             </div>
         </div>
