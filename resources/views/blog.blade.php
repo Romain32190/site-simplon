@@ -15,6 +15,7 @@
    href="http://127.0.0.1:8000/flux" title="Blog"/>
 
     <!-- Custom styles for this template -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="css/blog.css" rel="stylesheet">
   </head>
 
@@ -23,6 +24,7 @@
     <div class="blog-masthead">
       <div class="container">
         <nav class="nav blog-nav">
+          <img id="occitanie" src="images/simplonOcc.png" alt="formation"/>
           <a class="nav-link active" href="#">Blog</a>
           <a class="nav-link" type="application/rss+xml"
              href="http://127.0.0.1:8000/flux">Flux RSS de cette page
@@ -30,13 +32,6 @@
           <a class="nav-link " href="/">Revenir à l'accueil</a>
 
         </nav>
-      </div>
-    </div>
-
-    <div class="blog-header">
-      <div class="container">
-        <h1 class="blog-title">Blog de Simplon AUCH</h1>
-        <p class="lead blog-description">Vous voici sur le blog de simplon auch !</p>
       </div>
     </div>
 
@@ -66,7 +61,7 @@
 
 
           <nav class="blog-pagination">
-            <a class="btn btn-outline-primary" href="#">Ancien article</a>
+            <a  href="#">Ancien article</a>
             <a class="btn btn-outline-secondary disabled" href="#">Les plus récents</a>
           </nav>
 
@@ -94,8 +89,8 @@
 
     <footer class="blog-footer">
 
-        <a href="#">Revenir en haut de la page</a>
-      </p>
+        <a  href="#">Revenir en haut de la page</a>
+
     </footer>
 
 
