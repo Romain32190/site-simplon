@@ -1,5 +1,6 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ app()->getLocale() }}">
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
@@ -51,7 +52,7 @@
 
           @foreach ($articles as $article)
           <?php 
-          $articleDate = date('d-m-Y  H:i:s', strtotime($article->created_at));
+            $articleDate = date('d-m-Y  H:i:s', strtotime($article->created_at));
            ?>
           <div class="blog-post">
             <h2 class="blog-post-title">{{$article->titre}}</h2>
