@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class BlogController extends Controller
 {
     public function getBlog() {
-    	$articles = DB::table('blog')->orderBy('created_at', 'desc')->get() ;
+    	$articles = DB::table('blog')->join('users','users.id','blog.auteur')->select('blog.*','users.userName')->orderBy('created_at', 'desc')->get() ;
     	return view('/blog', ['articles' => $articles]);
     }
 }
