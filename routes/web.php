@@ -40,9 +40,8 @@ Route::get('/promo', function(){
   return view('promotion');
 });
 
-Route::get('/blog', function(){
-  return view('blog');
-});
+Route::get('/blog', 'BlogController@getBlog');
+
 Route::get('/flux', function(){
   return view('flux');
 });

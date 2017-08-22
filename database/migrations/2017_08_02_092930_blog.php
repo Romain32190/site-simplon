@@ -16,7 +16,7 @@ class Blog extends Migration
         Schema::create('blog', function (Blueprint $table) {
             $table->increments('id');
             $table->string('titre');
-            $table->string('article');
+            $table->text('article');
             $table->integer('auteur');
             $table->integer('note');
             $table->timestamps();

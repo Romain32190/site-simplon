@@ -1,7 +1,7 @@
 <?php 
 header("Content_type: application/rss+xml");
 try {
-$bdd= new PDO('mysql:host=localhost;dbname=simplonSite;charset=utf8', 'root', 'azerty');
+$bdd= new PDO('mysql:host=localhost;dbname=simplonSite;charset=utf8', 'root', '');
 
 	}
 	catch (Exception $e) {
