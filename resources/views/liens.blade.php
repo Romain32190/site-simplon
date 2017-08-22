@@ -7,7 +7,6 @@
 
     <title>Nos partenaires</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="/CreativeLinkEffects/css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="/CreativeLinkEffects/css/demo.css" />
     <link rel="stylesheet" type="text/css" href="/CreativeLinkEffects/css/component.css" />
@@ -17,57 +16,24 @@
     <link rel="stylesheet" href="/css/liens.css">
 </head>
 <body class="image">
+
     <nav>    
         <a href="/"><span>Accueil</span></a>
     </nav>
-  <header>
-    <div class="ui stackable massive menu">
-      <div class="item">
-        <img src="/images/simplonOcc.png" alt="logo">
-      </div>
-      <a class="item" href="/q=simplon">Simplon</a>
-      <a class="item" href="/promo">Promotion</a>
-      <a class="item" href="/blog">Blog</a>
-      <a class="item" href="/contact">Contact</a>
-      <a class="item" href="/liens">Liens</a>
-    </div>
-  </header>
 
     <div class="content">
 
-        <div class="title">
+        <div class="title"> 
             NOS PARTENAIRES
         </div>
 
-        <div id='marquee-wrapper'>
-            <ul id='marquee'>
-                <li>
-                    <a target="_blank" href="http://simplon.co/">1<img class="img" src="images/simplonOcc.png" alt="Logo simplon"/></a>
-                </li>
-                <li>
-                    <a href="https://www.grandauch.com/">2<img class="img" src="/images/auchAgglo.png" alt="Logo Grand AUCH"/></a>
-                </li>
-                <li>
-                    <a target="_blank" href="http://www.laregion.fr/">3<img class="img" alt="Logo de la Région" src="images/occitanie.png"/></a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://www.laregion.fr/ERN">4<img class="img" src="images/ERN.png" alt="Logo de l'ERN"/></a>
-                </li>
-
-                <li>
-                    <a target="_blank" href="http://simplon.co/">1<img class="img" src="images/simplonOcc.png" alt="Logo simplon"/></a>
-                </li>
-                <li>
-                    <a href="https://www.grandauch.com/">2<img class="img" src="/images/auchAgglo.png" alt="Logo Grand AUCH"/></a>
-                </li>
-                <li>
-                    <a target="_blank" href="http://www.laregion.fr/">3<img class="img" alt="Logo de la Région" src="images/occitanie.png"/></a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://www.laregion.fr/ERN">4<img class="img" src="images/ERN.png" alt="Logo de l'ERN"/></a>
-                </li>
-
-            </ul>
+        <div class="logo">
+            <a href="http://simplon.co/" target="_blank"><img class="img" src="images/simplonOcc.png" alt="Logo simplon"></a>
+            <a href="https://www.grandauch.com/" target="_blank"><img class="img" src="/images/auchAgglo.png" alt="Logo Grand AUCH"></a>
+            <a href="http://www.laregion.fr/" target="_blank"><img class="img" alt="Logo de la Région" src="images/occitanie.png"></a>
+            <a href="https://www.laregion.fr/ERN" target="_blank"><img class="img" src="images/ERN.png" alt="Logo de l'ERN"></a>
+            <a href="kanope-scae.com/
+            " target="_blank"><img class="img" src="/images/kanope.png" alt="Logo de Kanope"></a>
         </div>
 
         <h2 class="autres_promotions">AUTRES PROMOTIONS</h2>
@@ -79,7 +45,5 @@
         </nav>
 
     </div>
-
-    <script src="/js/continue.js"" type="text/javascript"></script>
 </body>
 </html>
