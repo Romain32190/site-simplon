@@ -4,13 +4,13 @@ html, body {
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
     height: 100vh;
-    margin: 0 auto;
+    margin: 0;
 }
 .image, .html{
   background-image:url('../images/bi.png');
   opacity: 0.80;
-}
 
+}
 .full-height {
     height: 100vh;
 }
@@ -43,59 +43,11 @@ span {
     font-size: 65%;
 }
 
-span:hover{
-  color: black;
-}
-
-@-webkit-keyframes marqueelike {
-    0%, 100% {margin-left:0;}
-    99.99% {margin-left:-100%;}
-}
-
-@-webkit-keyframes marqueelike {
-    0%, 100% {margin-left:0;}
-    99.99% {margin-left:-100%;}
-}
-
-@-moz-keyframes marqueelike {
-    0%, 100% {margin-left:0;}
-    99.99% {margin-left:-100%;}
-}
-
-@-o-keyframes marqueelike {
-    0%, 100% {margin-left:0;}
-    99.99% {margin-left:-100%;}
-}
-
-@-ms-keyframes marqueelike {
-    0%, 100% {margin-left:0;}
-    99.99% {margin-left:-100%;}
-}
-
-@keyframes marqueelike {
-    0%, 100% {margin-left:0;}
-    99.99% {margin-left:-100%;}
-}   
-
-.img {
-
-    display: block;
-    overflow: hidden;
-    position: relative;
-    table-layout: fixed;
-    white-space:nowrap;
-    height: 100px;
-    width: 100pt;
-    margin: 10pt;
-    animation:linear marqueelike 5s infinite;
-    -webkit-animation:linear marqueelike 5s infinite;
-    animation:linear marqueelike 5s infinite;
-}
-
 img:hover{
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+  border-radius: 10pt;
 }
 
 .m-b-md {
@@ -106,14 +58,20 @@ img:hover{
   display: flex;
   justify-content: space-around;
   margin: auto;
-  box-shadow: 1px 3px 6px;
 }
 
 .logo img:hover{
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+  border-radius: 15pt;
   transition: 0.3s;
+}
+
+.img {
+   height: 100px;
+   width: auto;
+   margin: 20pt;
 }
 
 .places {
@@ -327,4 +285,8 @@ img:hover{
 
 .autres_promotions {
     margin-top: 20pt;
+}
+
+.avatars{
+  margin-left : 17em;
 }
