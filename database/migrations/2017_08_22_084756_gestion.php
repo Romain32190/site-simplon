@@ -18,6 +18,8 @@ class Gestion extends Migration
             $table->string('image');
             $table->text('philosophie');
             $table->text('programme');
+            $table->timestamps();
+
         });
     }
 

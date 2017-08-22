@@ -69,3 +69,10 @@ Route::post('profile', 'UserController@update_avatar');
 Route::post('profile/cv', 'UserController@update_cv');
 Route::post('profile/email', 'UserController@update_email');
 Route::post('profile/password', 'UserController@update_password');
+Route::post('profile/desc', 'UserController@update_desc');
+
+Route::get('gestion', 'UserController@gestion');
+
+Route::post('gestion/img', 'UserController@update_img');
+Route::post('gestion/philo', 'UserController@update_philo');
+Route::post('gestion/prog', 'UserController@update_prog');
