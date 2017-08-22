@@ -1,4 +1,4 @@
-<?php 
+<?php
 try {
 $bdd= new PDO('mysql:host=localhost;dbname=simplonSite;charset=utf8', 'root', 'azerty');
 
@@ -21,22 +21,8 @@ $blog= $bdd->query('SELECT titre, userName, article, blog.created_at FROM blog J
   <body class="image">
 
     <h1>Blog Simplon Auch</h1>
-<!-- <a type="application/rss+xml"
-   href="http://127.0.0.1:8000/flux">Flux RSS de cette page
-</a> -->
-
- <?php while($art = $blog->fetch()){ ?>                
-        
-        <div>
-          <div>
-            <h3><?= $art['titre'] ?></h3>
-          </div>
-
-            <div><?=$art['article']?><div>
-            <div><?=$art['userName']?></div>
-            <div><?=$art['created_at'] ?></div>
-        </div>   
-        
-        <?php } ?>
+    <a type="application/rss+xml"
+       href="http://127.0.0.1:8000/flux">Flux RSS de cette page
+    </a>
   </body>
 </html>
