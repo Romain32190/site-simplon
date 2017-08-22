@@ -18,7 +18,7 @@
 </head>
 <body class="image">
 
-    <nav class="cl-effect-1">    
+<nav class="">    
         <a href="/"><span>Accueil</span></a>
     </nav>
 
