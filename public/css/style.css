@@ -56,6 +56,10 @@ span {
   text-transform: uppercase;
 }
 
+a:hover{
+  color: black;
+}
+
 .m-b-md {
   width: 100%;
   height: auto;
