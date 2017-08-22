@@ -10,7 +10,6 @@
     <link rel="stylesheet" type="text/css" href="/CreativeLinkEffects/css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="/CreativeLinkEffects/css/demo.css" />
     <link rel="stylesheet" type="text/css" href="/CreativeLinkEffects/css/component.css" />
-    <script src="/CreativeLinkEffects/js/modernizr.custom.js"></script>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -18,7 +17,7 @@
 </head>
 <body class="image">
 
-<nav class="">    
+    <nav>    
         <a href="/"><span>Accueil</span></a>
     </nav>
 
@@ -29,10 +28,10 @@
         </div>
 
         <div class="logo">
-            <a href="http://simplon.co/" target="_blank"><img class="img" src="images/simplon.jpg" alt="Logo simplon"></a>
-            <a href="https://www.grandauch.com/" target="_blank"><img class="img" src="/images/auch.png" alt="Logo Grand AUCH"></a>
+            <a href="http://simplon.co/" target="_blank"><img class="img" src="images/simplonOcc.png" alt="Logo simplon"></a>
+            <a href="https://www.grandauch.com/" target="_blank"><img class="img" src="/images/auchAgglo.png" alt="Logo Grand AUCH"></a>
             <a href="http://www.laregion.fr/" target="_blank"><img class="img" alt="Logo de la Région" src="images/occitanie.png"></a>
-            <a href="https://www.laregion.fr/ERN" target="_blank"><img class="img" src="images/ern" alt="Logo de l'ERN"></a>
+            <a href="https://www.laregion.fr/ERN" target="_blank"><img class="img" src="images/ERN.png" alt="Logo de l'ERN"></a>
             <a href="kanope-scae.com/
             " target="_blank"><img class="img" src="/images/kanope.png" alt="Logo de Kanope"></a>
         </div>
@@ -46,6 +45,5 @@
         </nav>
 
     </div>
-
 </body>
 </html>
