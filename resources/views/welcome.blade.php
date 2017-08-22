@@ -24,9 +24,10 @@
             <div class="top-right links" style="margin-right: 5.5em;">
                 @auth
                 <div class="dropdown">
-                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Menu
+                    <button class="btn btn dropdown-toggle btn-lg" type="button" data-toggle="dropdown">Menu
                         <span class="caret"></span></button>
                         <ul class="dropdown-menu">
+                          <h6 class="dropdown-header">Administration</h6>
                           <li><a href="/profile">Profil</a></li>
                           <li><a href="/blog">Blog</a></li>
                           <li><a href="{{ route('logout') }}"
@@ -41,7 +42,6 @@
                       </ul>
                   </div>                @else
                   <a href="{{ route('login') }}" data-hover="Narbonne">Connexion</a>
-                  <a href="{{ route('register') }}" data-hover="Saint-Gaudens">Inscription</a>
                   @endauth
               </div>
               @endif
@@ -55,7 +55,7 @@
                     <a href="/promo" data-hover="Saint-Gaudens"><span>Promotion</span></a>
                     <a href="/blog" data-hover="Montreuil"><span>Blog</span></a>
                     <a href="/contact" data-hover="Montreuil"><span>Contact</span></a>
-                    <a href="/liens" data-hover="Montreuil"><span>Liens</span></a>                                       
+                    <a href="/liens" data-hover="Montreuil"><span>Liens</span></a>
                 </nav>
             </div>
         </div>

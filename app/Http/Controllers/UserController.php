@@ -7,7 +7,7 @@ use App\Http\Requests;
 use Auth;
 use Image;
 use Illuminate\Foundation\Auth\User;
-
+use App\Gestion;
 
 class UserController extends Controller
 {
@@ -60,6 +60,54 @@ class UserController extends Controller
             $user->save();
         
         return view('profile', array('user' => Auth::user()) );
+
+    }
+    public function update_desc(Request $request){
+        
+            $desc= $request->desc;
+            $user = Auth::user();
+            $user->desc = $desc;
+            $user->save();
+        
+        return view('profile', array('user' => Auth::user()) );
+
+    }
+
+          public function gestion(){
+    return view('gestion', array('user' => Auth::user()) );
+  }
+
+public function update_img(Request $request){
+
+        if($request->hasFile('img')){
+            $image = $request->file('img');
+            $filename = time() . '.' . $image->getClientOriginalExtension();
+            Image::make($image)->resize(300, 300)->save( public_path('/storage/img/' . $filename ) );
+            
+           $gestion= gestion::find(1);
+            $gestion->image = $filename;
+            $gestion->save();
+        }
+        
+        return view('gestion', array('user' => Auth::user()) );
+
+    }
+    public function update_prog(Request $request){
+        $gestion= gestion::find(1);
+            $prog= $request->prog;
+            $gestion->programme = $prog;
+            $gestion->save();
+        
+        return view('gestion', array('user' => Auth::user()) );
+
+    }
+    public function update_philo(Request $request){
+        $gestion= gestion::find(1);
+            $philo= $request->philo;
+            $gestion->philosophie = $philo;
+            $gestion->save();
+        
+        return view('gestion', array('user' => Auth::user()) );
 
     }
     public function allUsers(){

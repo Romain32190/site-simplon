@@ -13,6 +13,9 @@
                 <a href="/profile">Profil</a>       
                     </li>
                     <li>
+                        <a href="/gestion">Gestion</a>
+                    </li>
+                    <li>
                 <a href="/gestion/blog">Blog</a>
                     </li>
                 </ul>

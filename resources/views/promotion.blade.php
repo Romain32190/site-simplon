@@ -47,11 +47,8 @@ $user= DB::select('SELECT * FROM users');
                     <a href="{{$value->cv}}" id="place-{{$value->id}}" class="place-avatar" target="_blank">
                          <img src="storage/avatars/{{$value->avatar}}" style="width: 70px; height: 70px; border-radius: 110%;" alt={{$value->userName}}>
                         <div class="description box content">
-
-                            <p> Mettre une descrition de chacun </p>
-
+                            <p> {{$value->desc}} </p>
                             <h4 class="nom">{{$value->userName}}</h4>
-
                         </div>
                     </a>
                     @endforeach
