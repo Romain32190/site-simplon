@@ -23,11 +23,11 @@
     <div class="blog-masthead">
       <div class="container">
         <nav class="nav blog-nav">
-          <a class="nav-link active" href="#">blog</a>
+          <a class="nav-link active" href="#">Blog</a>
           <a class="nav-link" type="application/rss+xml"
              href="http://127.0.0.1:8000/flux">Flux RSS de cette page
           </a>
-          <a class="nav-link " href="/">retour site</a>
+          <a class="nav-link " href="/">Revenir à l'accueil</a>
 
         </nav>
       </div>
@@ -35,8 +35,8 @@
 
     <div class="blog-header">
       <div class="container">
-        <h1 class="blog-title">Le Blog de Simplon </h1>
-        <p class="lead blog-description">vraiment trop bien !!</p>
+        <h1 class="blog-title">Blog de Simplon AUCH</h1>
+        <p class="lead blog-description">Vous voici sur le blog de simplon auch !</p>
       </div>
     </div>
 
@@ -50,7 +50,7 @@
 
 
           @foreach ($articles as $article)
-          <?php 
+          <?php
           $articleDate = date('d-m-Y  H:i:s', strtotime($article->created_at));
            ?>
           <div class="blog-post">
@@ -64,10 +64,10 @@
 
 
 
-          
+
           <nav class="blog-pagination">
-            <a class="btn btn-outline-primary" href="#">Older</a>
-            <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
+            <a class="btn btn-outline-primary" href="#">Ancien article</a>
+            <a class="btn btn-outline-secondary disabled" href="#">Les plus récents</a>
           </nav>
 
         </div><!-- /.blog-main -->
@@ -78,10 +78,11 @@
             <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
           </div>
 
-          <div class="sidebar-module">
-            <h4>Ailleur</h4>
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>Ailleurs</h4>
             <ol class="list-unstyled">
-              <li><a href="https://git">GitHub</a></li>
+              <li><a href="https://github.com/SimplonAuch">GitHub</a></li>
+            </div>
 
             </ol>
           </div>
@@ -93,7 +94,7 @@
 
     <footer class="blog-footer">
 
-        <a href="#">Back to top</a>
+        <a href="#">Revenir en haut de la page</a>
       </p>
     </footer>
 
