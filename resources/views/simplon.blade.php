@@ -15,7 +15,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
   {{-- <link rel="stylesheet" type="text/css" href="/Semantic-UI-CSS/semantic.css" /> --}}
-  <link rel="stylesheet" href="/css/liens.css">
+  <link rel="stylesheet" href="/css/promotion.css">
 </head>
 <body class="image">
 

@@ -20,7 +20,7 @@ $user= DB::select('SELECT * FROM users');
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/css/liens.css">
+    <link rel="stylesheet" href="/css/promotion.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css">
 
 </head>
@@ -30,7 +30,7 @@ $user= DB::select('SELECT * FROM users');
     <div class="places is-medium is-grey">
       <header>
         <div class="ui stackable massive menu">
-          <a href="/" class="item"><img src="/images/simplonOcc.png" alt="logo" />
+          <a class="item" href="/"><img src="/images/simplonOcc.png" alt="logo"></a>
           <a class="item" href="/q=simplon">Simplon</a>
           <a class="item" href="/promo">Promotion</a>
           <a class="item" href="/blog">Blog</a>
