@@ -8,40 +8,38 @@
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css">
-  <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
   <link rel="stylesheet" type="text/css" href="/CreativeLinkEffects/css/normalize.css" />
   <link rel="stylesheet" type="text/css" href="/CreativeLinkEffects/css/demo.css" />
   <link rel="stylesheet" type="text/css" href="/CreativeLinkEffects/css/component.css" />
+  <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+  <link rel="stylesheet" href="/css/article.css">
 
   <title>Nouvel Article</title>
 </head>
 <body>
 
 <div class="container">
-
- <nav class="cl-effect-1">    
-  <a href="/" style="color: blue;"><span>Accueil</span></a>
+ <nav class="cl-effect-1">
+  <a href="/" style="color: black;"><span class="accueil">Revenir à l'accueil</span></a>
 </nav>
 
-<form action="/newarticle" method="post" class="ui form">
+<form action="/newarticle" method="post" class="form-group">
   {{ csrf_field() }}
-  <div class="field">
-    <label>Titre:</label>
-    <input type="text" name="titre" id="titre" >
-    
+  <div class="form-group">
+    <label>Titre de l'article</label>
+    <input type="text" name="titre" id="titre" class="form-control">
+
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <label>Article:</label>
-    <textarea name="article" id="article"></textarea>
-    
+    <textarea name="article" id="article" class="form-control" rows="5"></textarea>
+
   </div>
 
-  <button class="ui button green" type="submit">Enregistrer</button>
+  <button class="btn btn-success" type="submit">Ajoutez l'article au blog</button>
 </form>
-</div>  
+</div>
 
 </body>
 </html>
