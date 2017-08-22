@@ -30,9 +30,7 @@ $user= DB::select('SELECT * FROM users');
     <div class="places is-medium is-grey">
       <header>
         <div class="ui stackable massive menu">
-          <div class="item">
-            <img src="/images/simplonOcc.png" alt="logo">
-          </div>
+          <a href="/" class="item"><img src="/images/simplonOcc.png" alt="logo" />
           <a class="item" href="/q=simplon">Simplon</a>
           <a class="item" href="/promo">Promotion</a>
           <a class="item" href="/blog">Blog</a>
