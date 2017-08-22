@@ -7,6 +7,7 @@
 
     <title>Nos partenaires</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="/CreativeLinkEffects/css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="/CreativeLinkEffects/css/demo.css" />
     <link rel="stylesheet" type="text/css" href="/CreativeLinkEffects/css/component.css" />
@@ -18,13 +19,22 @@
 </head>
 <body class="image">
 
-<nav class="">    
-        <a href="/"><span>Accueil</span></a>
-    </nav>
+  <header>
+    <div class="ui stackable massive menu">
+      <div class="item">
+        <img src="/images/simplonOcc.png" alt="logo">
+      </div>
+      <a class="item" href="/q=simplon">Simplon</a>
+      <a class="item" href="/promo">Promotion</a>
+      <a class="item" href="/blog">Blog</a>
+      <a class="item" href="/contact">Contact</a>
+      <a class="item" href="/liens">Liens</a>
+    </div>
+  </header>
 
     <div class="content">
 
-        <div class="title"> 
+        <div class="title">
             NOS PARTENAIRES
         </div>
 

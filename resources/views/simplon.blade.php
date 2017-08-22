@@ -4,6 +4,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css">
+
         <title>Simplon</title>
 
         <!-- Fonts -->
@@ -12,9 +14,18 @@
     </head>
 
     <body>
-      <div class="content">
-        <h1 class="title">Page Simplon</h1>
-      </div>
+      <header>
+        <div class="ui stackable massive menu">
+          <div class="item">
+            <img src="/images/simplonOcc.png" alt="logo">
+          </div>
+          <a class="item" href="/q=simplon">Simplon</a>
+          <a class="item" href="/promo">Promotion</a>
+          <a class="item" href="/blog">Blog</a>
+          <a class="item" href="/contact">Contact</a>
+          <a class="item" href="/liens">Liens</a>
+        </div>
+      </header>
 
       <div class="content">
         <h2>Philosophie</h2>
