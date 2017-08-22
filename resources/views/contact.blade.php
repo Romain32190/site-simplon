@@ -56,27 +56,32 @@
     {{ session('status') }}
   </div>
   @endif
-  
+
   <form action="/contact" method="post" class="ui form">
     {{ csrf_field() }}
     <div class="field">
       <label>Votre nom:</label>
-      <input type="text" name="name" id="name">
+      <input type="text" name="name" id="name" value="{{ old('name')}}">
+      {!! $errors->first('name', '<div class="ui floating message">:message</div>') !!}
     </div>
     <div class="field">
       <label>Votre email:</label>
-      <input type="text" name="email" id="name">
+      <input type="text" name="email" id="name" value="{{ old('email')}}">
+      {!! $errors->first('email', '<div class="ui floating message"> :message </div>') !!}
     </div>
     <div class="field">
       <label>Votre sujet:</label>
-      <input type="text" name="subject" id="subject">
+      <input type="text" name="subject" id="subject" value="{{ old('subject') }}">
+      {!! $errors->first('subject', '<div class="ui floating message"> :message </div>') !!}
     </div>
     <div class="field">
       <label>Votre message:</label>
-      <textarea name="message" id="message"></textarea>
+      <textarea name="message" id="message"> {{ old('message') }} </textarea>
+      {!! $errors->first('message', '<div class="ui floating message"> :message </div>') !!}
     </div>
     <div class="field">
       {!! Recaptcha::render() !!}
+      {!! $errors->first('g-recaptcha-response', '<div class="ui floating message"> :message </div>') !!}
     </div>
     <button id="contact-button" class="ui button green" type="submit">Submit</button>
   </form>
