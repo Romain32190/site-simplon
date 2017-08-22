@@ -16,14 +16,14 @@
 </head>
 <body>
     <div class="image">
-        <div class="flex-center position-ref full-height cl-effect-1">
+        <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
             <div class="top-right links">
                 @auth
                 <a href="{{ url('/home') }}">Accueil</a>
                 @else
-                <a href="{{ route('login') }}" data-hover="Narbonne" target="_blank">Connexion</a>
-                <a href="{{ route('register') }}" data-hover="Saint-Gaudens" target="_blank">Inscription</a>
+                <a href="{{ route('login') }}" data-hover="Narbonne">Connexion</a>
+                <a href="{{ route('register') }}" data-hover="Saint-Gaudens">Inscription</a>
                 @endauth
             </div>
             @endif
@@ -33,11 +33,11 @@
                 <span class="simplon_auch"> SIMPLON AUCH </span>
 
                 <nav class="cl-effect-1">
-                    <a href="/q=simplon" data-hover="Narbonne" target="_blank"><span>Simplon</span></a>
-                    <a href="/promo" data-hover="Saint-Gaudens" target="_blank"><span>Promotion</span></a>
-                    <a href="/blog" data-hover="Montreuil" target="_blank"><span>Blog</span></a>
-                    <a href="/contact" data-hover="Montreuil" target="_blank"><span>Contact</span></a>
-                    <a href="/liens" data-hover="Montreuil" target="_blank"><span>Liens</span></a>                                       
+                    <a href="/q=simplon" data-hover="Narbonne"><span>Simplon</span></a>
+                    <a href="/promo" data-hover="Saint-Gaudens"><span>Promotion</span></a>
+                    <a href="/blog" data-hover="Montreuil"><span>Blog</span></a>
+                    <a href="/contact" data-hover="Montreuil"><span>Contact</span></a>
+                    <a href="/liens" data-hover="Montreuil"><span>Liens</span></a>                                       
                 </nav>
             </div>
         </div>

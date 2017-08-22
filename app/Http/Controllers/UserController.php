@@ -26,8 +26,40 @@ class UserController extends Controller
     		$user->avatar = $filename;
     		$user->save();
     	}
-
+        
     	return view('profile', array('user' => Auth::user()) );
+
+    }
+
+  public function update_cv(Request $request){
+        
+            $cv= $request->cv;
+            $user = Auth::user();
+            $user->cv = $cv;
+            $user->save();
+        
+        return view('profile', array('user' => Auth::user()) );
+
+    }
+
+    public function update_email(Request $request){
+        
+            $email= $request->email;
+            $user = Auth::user();
+            $user->email = $email;
+            $user->save();
+        
+        return view('profile', array('user' => Auth::user()) );
+
+    }
+    public function update_password(Request $request){
+        
+            $password= $request->password;
+            $user = Auth::user();
+            $user->password = bcrypt($password);
+            $user->save();
+        
+        return view('profile', array('user' => Auth::user()) );
 
     }
     public function allUsers(){
