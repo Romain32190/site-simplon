@@ -9,11 +9,23 @@
   <meta name="csrf-token" content="{{ csrf_token() }}">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css">
+  <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="/CreativeLinkEffects/css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="/CreativeLinkEffects/css/demo.css" />
+  <link rel="stylesheet" type="text/css" href="/CreativeLinkEffects/css/component.css" />
+
   <title>Nouvel Article</title>
 </head>
 <body>
 
- <form action="/newarticle" method="post" class="ui form">
+<div class="container">
+
+ <nav class="cl-effect-1">    
+  <a href="/" style="color: blue;"><span>Accueil</span></a>
+</nav>
+
+<form action="/newarticle" method="post" class="ui form">
   {{ csrf_field() }}
   <div class="field">
     <label>Titre:</label>
@@ -29,7 +41,7 @@
 
   <button class="ui button green" type="submit">Enregistrer</button>
 </form>
-
+</div>  
 
 </body>
 </html>

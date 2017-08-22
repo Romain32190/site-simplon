@@ -50,7 +50,7 @@ Route::get('/article', function(){
   return view('newarticle');
 });
 
-Route::post('/newarticle', 'BlogController@nvArtile');
+Route::post('/newarticle', 'BlogController@nvArticle');
 
 /*
 /

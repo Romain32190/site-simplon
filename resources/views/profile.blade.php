@@ -34,6 +34,7 @@
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 <input type="submit" class="pull-right btn btn-sm btn-primary" style="margin-top:0.5em;">
             </form>
+
         </div>
     </div>
 </div>
