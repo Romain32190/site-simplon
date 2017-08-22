@@ -21,7 +21,7 @@
     <div class="image">
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
-            <div class="top-right links" style="margin-right: 80em;">
+            <div class="top-right links" style="margin-right: 5.5em;">
                 @auth
                 <div class="dropdown">
                     <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Menu
