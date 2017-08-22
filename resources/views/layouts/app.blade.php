@@ -44,7 +44,7 @@
                         <!-- Authentication Links -->
                         @if (Auth::guest())
                             <li><a href="{{ route('login') }}">Connexion</a></li>
-                            <li><a href="{{ route('register') }}">Inscription</a></li>
+                           
                         @else
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">

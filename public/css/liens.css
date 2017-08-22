@@ -4,7 +4,7 @@ html, body {
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
     height: 100vh;
-    margin: 0 auto;
+    margin: auto;
 }
 .image, .html{
   background-image:url('../images/bi.png');
@@ -77,4 +77,9 @@ img:hover{
 
 .autres_promotions {
     margin-top: 20pt;
+}
+
+.avatars{
+  margin-left : 21em;
+  margin-top : 5em;
 }

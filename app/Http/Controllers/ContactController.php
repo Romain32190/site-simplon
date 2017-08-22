@@ -6,17 +6,24 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Contact;
 use Mail;
+use Validator;
 
 class ContactController extends Controller
 {
     public function postContact(Request $request){
-      $this->validate($request, [
+
+      $validator = Validator::make($request->all(), [
         'email' => 'required|email',
         'name' => 'min:3',
         'subject' => 'min:3',
         'message' => 'min:10',
         'g-recaptcha-response' => 'required|recaptcha',
       ]);
+
+      if ($validator->fails()){
+        return back()->withErrors($validator)->withInput($request->all());
+      }
+
 
 
       $data = array(
@@ -28,7 +35,7 @@ class ContactController extends Controller
 
       Mail::send('emails.contact', $data, function($message) use ($data){
         $message->from($data['email']);
-        $message->to('roma.maxime1994@gmail.com');
+        $message->to('simplonAuch@gmail.com');
         $message->subject($data['subject']);
       });
 

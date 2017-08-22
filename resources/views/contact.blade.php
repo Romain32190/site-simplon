@@ -7,7 +7,19 @@
   <link rel="stylesheet" href="/css/style.css">
   <title>Page contact</title>
 </head>
-{{-- <body> --}}
+<body>
+  <header>
+    <div class="ui stackable massive menu">
+      <div class="item">
+        <img src="/images/simplonOcc.png" alt="logo">
+      </div>
+      <a class="item" href="/q=simplon">Simplon</a>
+      <a class="item" href="/promo">Promotion</a>
+      <a class="item" href="/blog">Blog</a>
+      <a class="item" href="/contact">Contact</a>
+      <a class="item" href="/liens">Liens</a>
+    </div>
+  </header>
 
 <h1 class="contact">Contact</h1>
 
@@ -56,27 +68,32 @@
     {{ session('status') }}
   </div>
   @endif
-  
+
   <form action="/contact" method="post" class="ui form">
     {{ csrf_field() }}
-    <div class="field">
+    <div class="field" {!! $errors->has('name') ? 'has-error' : '' !!}>
       <label>Votre nom:</label>
-      <input type="text" name="name" id="name">
+      <input type="text" name="name" id="name" value="{{ old('name')}}">
+      {!! $errors->first('name', '<div class="ui floating message">:message</div>') !!}
     </div>
     <div class="field">
       <label>Votre email:</label>
-      <input type="text" name="email" id="name">
+      <input type="text" name="email" id="name" value="{{ old('email')}}">
+      {!! $errors->first('email', '<div class="ui floating message"> :message </div>') !!}
     </div>
     <div class="field">
       <label>Votre sujet:</label>
-      <input type="text" name="subject" id="subject">
+      <input type="text" name="subject" id="subject" value="{{ old('subject') }}">
+      {!! $errors->first('subject', '<div class="ui floating message"> :message </div>') !!}
     </div>
     <div class="field">
       <label>Votre message:</label>
-      <textarea name="message" id="message"></textarea>
+      <textarea name="message" id="message"> {{ old('message') }} </textarea>
+      {!! $errors->first('message', '<div class="ui floating message"> :message </div>') !!}
     </div>
     <div class="field">
       {!! Recaptcha::render() !!}
+      {!! $errors->first('g-recaptcha-response', '<div class="ui floating message"> :message </div>') !!}
     </div>
     <button id="contact-button" class="ui button green" type="submit">Submit</button>
   </form>
