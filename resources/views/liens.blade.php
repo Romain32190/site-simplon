@@ -17,9 +17,6 @@
     <link rel="stylesheet" href="/css/liens.css">
 </head>
 <body class="image">
-    <nav>    
-        <a href="/"><span>Accueil</span></a>
-    </nav>
   <header>
     <div class="ui stackable massive menu">
       <a href="/" class="item"><img src="/images/simplonOcc.png" alt="logo" />
