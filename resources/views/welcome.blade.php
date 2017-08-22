@@ -13,22 +13,40 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
     <div class="image">
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
-            <div class="top-right links">
+            <div class="top-right links" style="margin-right: 80em;">
                 @auth
-                <a href="{{ url('/home') }}">Accueil</a>
-                @else
-                <a href="{{ route('login') }}" data-hover="Narbonne">Connexion</a>
-                <a href="{{ route('register') }}" data-hover="Saint-Gaudens">Inscription</a>
-                @endauth
-            </div>
-            @endif
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Menu
+                        <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                          <li><a href="/profile">Profil</a></li>
+                          <li><a href="/blog">Blog</a></li>
+                          <li><a href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            Deconnexion
+                                        </a>
 
-            <div class="content">
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form></li>
+                      </ul>
+                  </div>                @else
+                  <a href="{{ route('login') }}" data-hover="Narbonne">Connexion</a>
+                  <a href="{{ route('register') }}" data-hover="Saint-Gaudens">Inscription</a>
+                  @endauth
+              </div>
+              @endif
+
+              <div class="content">
 
                 <span class="simplon_auch"> SIMPLON AUCH </span>
 
