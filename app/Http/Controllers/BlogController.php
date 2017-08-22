@@ -7,14 +7,17 @@ use Illuminate\Http\Request;
 use Auth;
 use App\Article;
 
+
 class BlogController extends Controller
 {
     public function getBlog() {
-    	$articles = DB::table('blog')->join('users','users.id','blog.auteur')->select('blog.*','users.userName')->orderBy('created_at', 'desc')->get() ;
+    	$articles = DB::table('blog')->join('users','users.id','blog.auteur')->select('blog.*','users.cv','users.userName','users.avatar','users.id as user_id')->orderBy('created_at', 'desc')->get() ;
     	return view('/blog', ['articles' => $articles]);
     }
 
     public function nvArticle(Request $request){
+
+        
 
     	$article = new article;
 

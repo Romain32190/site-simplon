@@ -12,7 +12,7 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
 
-   $promo = ['morel','mouad','romain','maxime','raf','emilie','elodie','florian','dimitri','franck','gregory','jordy','marco','oceane','julien','aurelien','jordan','victor'];
+   $promo = ['morel','mouad','romain','maxime','raphael','emilie','elodie','florian','dimitri','franck','gregory','jordy','marco','oceane','julien','aurelien','jordan','victor'];
 
 		   for($i = 0;$i < count($promo); $i ++) {
 
