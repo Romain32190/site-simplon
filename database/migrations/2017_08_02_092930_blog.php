@@ -18,7 +18,7 @@ class Blog extends Migration
             $table->string('titre');
             $table->text('article');
             $table->integer('auteur');
-            $table->integer('note');
+            $table->integer('note')->nullable()->default(0);
             $table->timestamps();
         });
     }
