@@ -66,3 +66,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('profile', 'UserController@profile');
 
 Route::post('profile', 'UserController@update_avatar');
+Route::post('profile/cv', 'UserController@update_cv');
+Route::post('profile/email', 'UserController@update_email');
+Route::post('profile/password', 'UserController@update_password');
