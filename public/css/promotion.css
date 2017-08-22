@@ -1,0 +1,292 @@
+html, body {
+    background-color: #fff;
+    color: #636b6f;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    height: 100vh;
+    margin: 0;
+}
+.image, .html{
+  background-image:url('../images/bi.png');
+  opacity: 0.80;
+
+}
+.full-height {
+    height: 100vh;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+
+.content {
+    text-align: center;
+}
+
+.title {
+    font-size: 84px;
+}
+
+span {
+    font-size: 65%;
+}
+
+img:hover{
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  border-radius: 10pt;
+}
+
+.m-b-md {
+    margin-bottom: 30px;
+}
+
+.logo{
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.logo img:hover{
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  border-radius: 15pt;
+  transition: 0.3s;
+}
+
+.img {
+   height: 100px;
+   width: auto;
+   margin: 20pt;
+}
+
+.places {
+    background: #fbfbfb
+}
+
+.places>.container {
+    height: 100%;
+}
+
+.places .avatars {
+    display: none;
+    z-index: 10;
+    -webkit-animation: rotateAvatars 150s linear infinite;
+    animation: rotateAvatars 150s linear infinite;
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 590px;
+    height: 607px;
+}
+
+.places .avatars:hover,
+.places .avatars:hover .place-avatar {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+@media screen and (min-width:769px) {
+    .places .avatars {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1180px) {
+    .places .avatars {
+        display: block;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    .places .avatars {
+        width: 711px;
+        height: 677px
+    }
+}
+
+@-webkit-keyframes rotateAvatars {
+    to {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn)
+    }
+}
+
+@keyframes rotateAvatars {
+    to {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn)
+    }
+}
+
+.place-avatar {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    -webkit-animation: reverseRotateSingleAvatar 150s linear infinite;
+    animation: reverseRotateSingleAvatar 150s linear infinite;
+}
+
+.place-avatar:hover {
+    -webkit-animation-play-state: pause;
+    animation-play-state: pause;
+    z-index: 100;
+}
+
+.place-avatar:hover img {
+    -webkit-box-shadow: 0 0 0 4px #fbfbfb, 0 0 0 6px rgba(0, 0, 0, .1), 0 0 0 10px #fbfbfb, 0 0 0 12px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 0 4px #fbfbfb, 0 0 0 6px rgba(0, 0, 0, .1), 0 0 0 10px #fbfbfb, 0 0 0 12px rgba(0, 0, 0, .1);
+}
+
+.place-avatar:hover .description {
+    display: block
+}
+
+@-webkit-keyframes reverseRotateSingleAvatar {
+    to {
+        -webkit-transform: rotate(-1turn);
+        transform: rotate(-1turn);
+    }
+}
+
+@keyframes reverseRotateSingleAvatar {
+    to {
+        -webkit-transform: rotate(10turn);
+        transform: rotate(-1turn)
+    }
+}
+
+#place-1 {
+    left: 300px;
+    top: 350px
+}
+
+#place-2 {
+    left: 200px;
+    top: 300px
+}
+
+#place-3 {
+    top: 212px;
+    left: 257px
+}
+
+#place-4 {
+    left: 362px;
+    top: 244px
+}
+
+#place-5 {
+    top: 385px;
+    left: 385px
+}
+
+#place-6 {
+    left: 144px;
+    top: 360px
+}
+
+#place-7 {
+    left: 127px;
+    top: 238px
+}
+
+#place-8 {
+    top: 138px;
+    left: 170px
+}
+
+#place-9 {
+    top: 112px;
+    left: 343px
+}
+
+#place-10 {
+    top: 238px;
+    left: 467px
+}
+#place-11 {
+    top: 357px;
+    left: 490px
+}
+#place-12 {
+    top: 478px;
+    left: 418px
+}
+#place-13 {
+    top: 530px;
+    left: 330px
+}
+#place-14 {
+    top: 520px;
+    left: 180px
+}
+#place-15 {
+    top: 478px;
+    left: 97px
+}
+#place-16 {
+    left: 40px;
+    top: 340px
+}
+#place-17 {
+    top: 170px;
+    left: 50px
+}
+#place-18 {
+    top: 445px;
+    left: 247px
+}
+
+.place-avatar .description {
+    background: #fff;
+    width: 300px;
+    top: 0;
+    left: 140%;
+    position: absolute;
+    color: #4d545d;
+    border: none;
+    -webkit-box-shadow: 5px 6px 5px rgba(51, 51, 51, .02);
+    box-shadow: 5px 6px 5px rgba(51, 51, 51, .02);
+    display: none
+}
+
+.place-avatar .description:after {
+    content: "";
+    border-right: 10px solid #fff;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    position: absolute;
+    top: 25px;
+    left: -10px;
+    width: 0;
+    display: block
+}
+
+.place-avatar .description .nom {
+    font-weight: 700;
+    display: block;
+    text-transform: uppercase
+}
+
+.autres_promotions {
+    margin-top: 20pt;
+}
+
+.avatars{
+  margin-left : 17em;
+}
