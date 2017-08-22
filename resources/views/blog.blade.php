@@ -6,7 +6,7 @@
     <meta name="description" content=""/>
     <meta name="author" content=""/>
 
-    <title>Blog Template for Bootstrap</title>
+    <title>Blog simplon Auch</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="/css/tether.min.css">
@@ -23,7 +23,10 @@
     <div class="blog-masthead">
       <div class="container">
         <nav class="nav blog-nav">
-          <a class="nav-link active" href="/">Home</a>
+          <a class="nav-link" type="application/rss+xml"
+             href="http://127.0.0.1:8000/flux">Flux RSS de cette page
+          </a>
+          <a class="nav-link " href="/">retour site</a>
 
         </nav>
       </div>
@@ -43,15 +46,13 @@
         <div class="col-sm-8 blog-main">
 
 
-          <a type="application/rss+xml"
-             href="http://127.0.0.1:8000/flux">Flux RSS de cette page
-          </a>
+
 
           @foreach ($articles as $article)
           <div class="blog-post">
             <h2 class="blog-post-title">{{$article->titre}}</h2>
-            <p class="blog-post-meta">le {{$article->created_at}} de <a href="#">{{$article->userName}}</a></p>
-            <p class="blog-post-meta"><i class="icon-star"> {{$article->note}}</i></p>
+            <p class="blog-post-meta">le {{$article->created_at}} de <a href="#">{{$article->userName}}   </a><span>&#9733;</span>{{$article->note}}</p>
+
             {{$article->article}}
 
           </div>
