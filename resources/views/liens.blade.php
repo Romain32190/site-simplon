@@ -24,7 +24,7 @@
 
     <div class="content">
 
-        <div class="title">
+        <div class="title"> 
             NOS PARTENAIRES
         </div>
 
