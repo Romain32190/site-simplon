@@ -7,15 +7,24 @@
 
     <title>Nos partenaires</title>
 
+    <link rel="stylesheet" type="text/css" href="/CreativeLinkEffects/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/CreativeLinkEffects/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="/CreativeLinkEffects/css/component.css" />
+    <script src="/CreativeLinkEffects/js/modernizr.custom.js"></script>
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/css/liens.css">
 </head>
 <body class="image">
 
+<nav class="">    
+        <a href="/"><span>Accueil</span></a>
+    </nav>
+
     <div class="content">
 
-        <div class="title">
+        <div class="title"> 
             NOS PARTENAIRES
         </div>
 
@@ -28,13 +37,15 @@
             " target="_blank"><img class="img" src="/images/kanope.png" alt="Logo de Kanope"></a>
         </div>
 
-        AUTRES PROMOTIONS
+        <h2 class="autres_promotions">AUTRES PROMOTIONS</h2>
 
-        <div class="links">
-            <a href="https://narbonne.simplon.co/" target="_blank">Narbonne</a>
-            <a href="https://stgaudens.simplon.co/" target="_blank">Saint-Gaudens</a>
-            <a href="https://simplon.co/" target="_blank">Montreuil</a>
-        </div>
+        <nav class="cl-effect-1">
+            <a href="https://narbonne.simplon.co/" data-hover="Narbonne" target="_blank"><span>Narbonne</span></a>
+            <a href="https://stgaudens.simplon.co/" data-hover="Saint-Gaudens" target="_blank"><span>Saint-Gaudens</span></a>
+            <a href="https://simplon.co/" data-hover="Montreuil" target="_blank"><span>Montreuil</span></a>
+        </nav>
+
     </div>
+
 </body>
 </html>

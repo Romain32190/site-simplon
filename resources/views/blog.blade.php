@@ -1,3 +1,14 @@
+<?php
+try {
+$bdd= new PDO('mysql:host=localhost;dbname=simplonSite;charset=utf8', 'root', 'azerty');
+
+  }
+  catch (Exception $e) {
+    die('Erreur : ' .$e->getMessage());
+  }
+// Récupère les 10 derniers articles écrits
+$blog= $bdd->query('SELECT titre, userName, article, blog.created_at FROM blog JOIN users ON blog.auteur=users.id ORDER BY blog.created_at DESC ');
+ ?>
 <!DOCTYPE html>
 <html>
   <head>
