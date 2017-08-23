@@ -13,7 +13,6 @@
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-  {{-- <link rel="stylesheet" type="text/css" href="/Semantic-UI-CSS/semantic.css" /> --}}
   <link rel="stylesheet" href="/css/liens.css">
 </head>
 <body class="image">
@@ -30,25 +29,27 @@
 
     <div class="ui aligned grid">
       <div class="center aligned two column row">
+
         <div class="column">
-          <h2>PHILOSOPHIE</h2>
-          <div class="ui segment">
+
+          <div class="ui segment"><h2 class="">PHILOSOPHIE</h2>
             Entreprise de l’économie sociale et solidaire (agrément ESUS), Simplon.co est un réseau de « fabriques » (écoles) qui propose des formations gratuites pour les apprenant.e.s et intensives pour devenir développeur.se de sites web et d’applications mobiles, intégrateur.trice, référent numérique, datartisan, e-commerçant...
             Entreprise de l’économie sociale et solidaire (agrément ESUS), Simplon.co est un réseau de « fabriques » (écoles) qui propose des formations gratuites pour les apprenant.e.s et intensives pour devenir développeur.se de sites web et d’applications mobiles, intégrateur.trice, référent numérique, datartisan, e-commerçant...
             Entreprise de l’économie sociale et solidaire (agrément ESUS), Simplon.co est un réseau de « fabriques » (écoles) qui propose des formations gratuites pour les apprenant.e.s et intensives pour devenir développeur.se de sites web et d’applications mobiles, intégrateur.trice, référent numérique, datartisan, e-commerçant...
           </div>
         </div>
+
         <div class="column">
-          <h2>PROGRAMME</h2>
-          <div class="ui segment">
+
+          <div class="ui segment"><h2>PROGRAMME</h2>
             Entreprise de l’économie sociale et solidaire (agrément ESUS), Simplon.co est un réseau de « fabriques » (écoles) qui propose des formations gratuites pour les apprenant.e.s et intensives pour devenir développeur.se de sites web et d’applications mobiles, intégrateur.trice, référent numérique, datartisan, e-commerçant...
             Entreprise de l’économie sociale et solidaire (agrément ESUS), Simplon.co est un réseau de « fabriques » (écoles) qui propose des formations gratuites pour les apprenant.e.s et intensives pour devenir développeur.se de sites web et d’applications mobiles, intégrateur.trice, référent numérique, datartisan, e-commerçant...
             Entreprise de l’économie sociale et solidaire (agrément ESUS), Simplon.co est un réseau de « fabriques » (écoles) qui propose des formations gratuites pour les apprenant.e.s et intensives pour devenir développeur.se de sites web et d’applications mobiles, intégrateur.trice, référent numérique, datartisan, e-commerçant...
           </div>
         </div>
+
       </div>
     </div>
-
   </div>
 
 </body>

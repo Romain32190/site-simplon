@@ -1,29 +1,29 @@
 html, body {
-    background-color: #fff;
-    color: #636b6f;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 100;
-    height: 100vh;
-    margin: 0 auto;
+	background-color: #fff;
+	color: #636b6f;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+	height: 100vh;
+	margin: 0 auto;
 }
 
 .image, .html{
-  background-image:url('../images/bi.png');
-  opacity: 0.80;
+	background-image:url('../images/bi.png');
+	opacity: 0.80;
 }
 
 .content {
-    text-align: center;
+	text-align: center;
 }
 
 .title {
-    font-size: 84px;
+	font-size: 84px;
 }
 
 span {
-    font-size: 65%;
+	font-size: 65%;
 }
 
 span:hover{
-  color: black;
+	color: black;
 }
