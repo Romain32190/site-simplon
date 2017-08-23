@@ -13,7 +13,6 @@
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-  {{-- <link rel="stylesheet" type="text/css" href="/Semantic-UI-CSS/semantic.css" /> --}}
   <link rel="stylesheet" href="/css/liens.css">
 </head>
 <body class="image" style="background-image: url('{{$backImage}}')">
@@ -30,21 +29,26 @@
 
     <div class="ui aligned grid">
       <div class="center aligned two column row">
+
         <div class="column">
+
           <h2>PHILOSOPHIE</h2>
           <div class="ui segment">
           {{$philosophie}}
           </div>
         </div>
+
         <div class="column">
+
           <h2>PROGRAMME</h2>
           <div class="ui segment">
           {{$programme}}
+
           </div>
         </div>
+
       </div>
     </div>
-
   </div>
 
 </body>
