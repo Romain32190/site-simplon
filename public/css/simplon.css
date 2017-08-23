@@ -1,23 +1,15 @@
-html, body {
-	background-color: #fff;
-	color: #636b6f;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 100;
-	height: 100vh;
-	margin: 0 auto;
-}
-
-.image, .html{
+body {
 	background-image:url('../images/bi.png');
 	opacity: 0.80;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+	margin: 0 auto;
+	width: auto;
+	height: auto;
 }
 
-.content {
-	text-align: center;
-}
-
-.title {
-	font-size: 84px;
+h2 {
+	font-size: 100px;
 }
 
 span {
@@ -26,4 +18,26 @@ span {
 
 span:hover{
 	color: black;
+}
+
+.col {
+	background-color: white;
+	height: 200pt; 
+	border-radius: 8pt; 
+	font-size: 150%; 
+	margin: 10pt; 
+	height: auto; 
+	padding: 10pt;
+}
+
+.text-center {
+	font-size: 500%;
+}
+
+.container {
+	margin-top: 40pt;
+}
+
+h3 {
+	text-decoration: underline;
 }
