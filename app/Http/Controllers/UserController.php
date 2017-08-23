@@ -79,21 +79,27 @@ class UserController extends Controller
 
 public function update_img(Request $request){
 
+
+       $gestion= Gestion::find(1);
+        // $gestion->image = $request->img;
+
         if($request->hasFile('img')){
+            
             $image = $request->file('img');
             $filename = time() . '.' . $image->getClientOriginalExtension();
-            Image::make($image)->resize(300, 300)->save( public_path('/storage/img/' . $filename ) );
+            $img = Image::make($image)->save( public_path('/storage/img/' . $filename ) );
+            $gestion->image = '/uploads/images/' .$filename;
             
-           $gestion= gestion::find(1);
-            $gestion->image = $filename;
-            $gestion->save();
         }
+        $gestion->save();
         
-        return view('gestion', array('user' => Auth::user()) );
+        return redirect('/gestion');
 
     }
+
+    
     public function update_prog(Request $request){
-        $gestion= gestion::find(1);
+        $gestion= Gestion::find(1);
             $prog= $request->prog;
             $gestion->programme = $prog;
             $gestion->save();
@@ -102,7 +108,7 @@ public function update_img(Request $request){
 
     }
     public function update_philo(Request $request){
-        $gestion= gestion::find(1);
+        $gestion= Gestion::find(1);
             $philo= $request->philo;
             $gestion->philosophie = $philo;
             $gestion->save();

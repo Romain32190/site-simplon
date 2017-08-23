@@ -8,7 +8,7 @@ $bdd= new PDO('mysql:host=localhost;dbname=simplonSite;charset=utf8', 'root', ''
 		die('Erreur : ' .$e->getMessage());
 	}
 // Récupère les 10 derniers articles écrits
-$flux= $bdd->query('SELECT titre, article, blog.created_at, userName FROM blog JOIN users ON blog.auteur=users.id ORDER BY created_at DESC ');
+$flux= $bdd->query('SELECT titre, article, blog.created_at, userName FROM blog JOIN users ON blog.auteur=users.id ORDER BY created_at DESC LIMIT 0,10');
 // $flux= DB::select('SELECT * FROM blog ORDER BY created_at DESC LIMIT 0,25');
 //dd($flux);
 $last= $bdd->query('SELECT created_at FROM blog ORDER BY created_at DESC LIMIT 0,1');
