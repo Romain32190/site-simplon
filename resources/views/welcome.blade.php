@@ -8,16 +8,15 @@
     <link rel="stylesheet" type="text/css" href="/CreativeLinkEffects/css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="/CreativeLinkEffects/css/demo.css" />
     <link rel="stylesheet" type="text/css" href="/CreativeLinkEffects/css/component.css" />
-    <script src="/CreativeLinkEffects/js/modernizr.custom.js"></script>
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <div class="image">
+    <div class="image" style="background-image: url('{{$backImage}}')">
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
             <div class="top-right links">
@@ -48,15 +47,16 @@
 
             <div class="content">
 
-
-                <span class="simplon_auch"> SIMPLON AUCH </span>
+                <div class="effet_couleur">
+                    <span class="simplon_auch">SIMPLON AUCH</span>
+                </div>
 
                 <nav class="cl-effect-1">
-                    <a href="/q=simplon" data-hover="Narbonne"><span>Simplon</span></a>
-                    <a href="/promo" data-hover="Saint-Gaudens"><span>Promotion</span></a>
-                    <a href="/blog" data-hover="Montreuil"><span>Blog</span></a>
-                    <a href="/contact" data-hover="Montreuil"><span>Contact</span></a>
-                    <a href="/liens" data-hover="Montreuil"><span>Liens</span></a>
+                    <a href="/about" ><span>Simplon</span></a>
+                    <a href="/promo" ><span>Promotion</span></a>
+                    <a href="/blog" ><span>Blog</span></a>
+                    <a href="/contact" ><span>Contact</span></a>
+                    <a href="/liens" ><span>Liens</span></a>
                 </nav>
             </div>
         </div>

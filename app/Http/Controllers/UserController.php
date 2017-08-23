@@ -88,7 +88,7 @@ public function update_img(Request $request){
             $image = $request->file('img');
             $filename = time() . '.' . $image->getClientOriginalExtension();
             $img = Image::make($image)->save( public_path('/storage/img/' . $filename ) );
-            $gestion->image = '/uploads/images/' .$filename;
+            $gestion->image = '/storage/img/' .$filename;
             
         }
         $gestion->save();

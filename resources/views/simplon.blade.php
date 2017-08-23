@@ -16,7 +16,7 @@
   <link rel="stylesheet" type="text/css" href="/bootstrap/dist/css/bootstrap.css" />
   <link rel="stylesheet" href="/css/simplon.css">
 </head>
-<body>
+<body style="background-image: url('{{$backImage}}')">
 
   <nav>    
     <a href="/"><span>Accueil</span></a>
@@ -28,11 +28,11 @@
     <div class="row">
       <div class="col">
         <h3>PHILOSOPHIE</h3>
-        Entreprise de l’économie sociale et solidaire (agrément ESUS), Simplon.co est un réseau de « fabriques » (écoles) qui propose des formations gratuites pour les apprenant.e.s et intensives pour devenir développeur.se de sites web et d’applications mobiles, intégrateur.trice, référent numérique, datartisan, e-commerçant...
+        {{$philosophie}}
       </div>
       <div class="col">
-        <h3 style="text-decoration: underline;">PROGRAMME</h3>
-        Entreprise de l’économie sociale et solidaire (agrément ESUS), Simplon.co est un réseau de « fabriques » (écoles) qui propose des formations gratuites pour les apprenant.e.s et intensives pour devenir développeur.se de sites web et d’applications mobiles, intégrateur.trice, référent numérique, datartisan, e-commerçant...
+        <h3>PROGRAMME</h3>
+        {{$programme}}
       </div>
     </div>
   </div>

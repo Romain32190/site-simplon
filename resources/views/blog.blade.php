@@ -25,12 +25,11 @@
     <div class="blog-masthead">
       <div class="container">
         <nav class="nav blog-nav">
-          <img id="occitanie" src="images/simplonOcc.png" alt="formation"/>
-          <a class="nav-link active" href="#">Blog</a>
-          <a class="nav-link" type="application/rss+xml"
+          <a href="/"><img id="occitanie" src="images/simplonOcc.png" alt="formation"/></a>
+          <!-- <img id="occitanie" src="images/simplonOcc.png" alt="formation"/> -->
+          <a class="nav-link active" type="application/rss+xml"
              href="http://127.0.0.1:8000/flux">Flux RSS de cette page
           </a>
-          <a class="nav-link " href="/">Revenir à l'accueil</a>
 
         </nav>
       </div>
