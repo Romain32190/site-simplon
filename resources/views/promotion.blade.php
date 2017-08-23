@@ -25,13 +25,13 @@ $user= DB::select('SELECT * FROM users');
 
 </head>
 
-<body class="container image">
+<body class="container image" style="background-image: url('{{$backImage}}')">
 
     <div class="places is-medium is-grey">
       <header>
         <div class="ui stackable massive menu">
           <a class="item" href="/"><img src="/images/simplonOcc.png" alt="logo"></a>
-          <a class="item" href="/q=simplon">Simplon</a>
+          <a class="item" href="/about">Simplon</a>
           <a class="item" href="/promo">Promotion</a>
           <a class="item" href="/blog">Blog</a>
           <a class="item" href="/contact">Contact</a>

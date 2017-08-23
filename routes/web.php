@@ -21,14 +21,19 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/liens', function () {
-    return view('liens');
+	$gestion = App\Gestion::find(1);
+    return view('welcome',['backImage' => $gestion->image ]);
 });
 
-Route::get('/q=simplon', function (){
-  return view('simplon');
+
+Route::get('/liens', function () {
+		$gestion = App\Gestion::find(1);
+    return view('liens',['backImage' => $gestion->image ]);
+});
+
+Route::get('/about', function (){
+$gestion = App\Gestion::find(1);
+  return view('simplon',['backImage' => $gestion->image,'philosophie' => $gestion->philosophie,'programme' => $gestion->programme]);
 });
 
 Route::get('/contact', function(){
@@ -37,7 +42,8 @@ Route::get('/contact', function(){
 Route::post('/contact', 'ContactController@postContact');
 
 Route::get('/promo', function(){
-  return view('promotion');
+	$gestion = App\Gestion::find(1);
+	return view('promotion',['backImage' => $gestion->image ]);
 });
 
 Route::get('/blog', 'BlogController@getBlog');
